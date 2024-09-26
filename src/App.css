@@ -1,0 +1,13 @@
+*{
+   padding: 0px;
+   margin: 0px; 
+}
+
+.containerApp {
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
