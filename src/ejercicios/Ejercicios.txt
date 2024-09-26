@@ -1,0 +1,71 @@
+Ejercicio 1: Juego de Adivinanza de Números
+
+Objetivo: Crear un juego donde el usuario adivine un número aleatorio entre 1 y 100.
+
+Pasos:
+1. Generar un número aleatorio:
+   - Utiliza Math.random() para generar un número entre 1 y 100 y guárdalo en el estado.
+   
+2. Crear un estado para la entrada del usuario: 
+   - Crea un estado que almacene el número que el usuario ingresa como su intento.
+
+3. Configurar un evento para adivinar:
+   - Crea una función que se ejecute al enviar el formulario.
+   - Compara el intento del usuario con el número secreto y determina si es demasiado bajo, demasiado alto o correcto.
+
+4. Mostrar mensajes de retroalimentación:
+   - Usa un estado adicional para almacenar mensajes que informen al usuario sobre su intento.
+
+5. Opcional: 
+   - Agrega un botón para reiniciar el juego, generando un nuevo número aleatorio.
+
+---
+
+Ejercicio 2: Generador de Colores Aleatorios
+
+Objetivo: Mostrar un color de fondo aleatorio y su código hexadecimal cada vez que el usuario haga clic en un botón.
+
+Pasos:
+1. Crear un estado para el color:
+   - Inicializa un estado para almacenar el color hexadecimal que se mostrará.
+
+2. Crear una función para generar un color aleatorio:
+   - Genera un número aleatorio y conviértelo a hexadecimal para crear un color.
+   - Asigna este nuevo color al estado.
+
+3. Establecer el color de fondo:
+   - Aplica el color almacenado en el estado como fondo del componente.
+
+4. Mostrar el código del color:
+   - En el renderizado, muestra el valor del color hexadecimal.
+
+5. Agregar un botón para generar el nuevo color:
+   - Asocia la función de generación de color al evento onClick del botón.
+
+---
+
+Ejercicio 3: Temporizador
+
+Objetivo: Crear un temporizador que permita iniciar, pausar y reiniciar un conteo regresivo basado en un tiempo ingresado por el usuario.
+
+Pasos:
+1. Crear un estado para los segundos:
+   - Inicializa un estado que almacene el tiempo ingresado en segundos.
+
+2. Crear un estado para la actividad del temporizador:
+   - Crea un estado que determine si el temporizador está activo o pausado.
+
+3. Configurar el efecto para contar regresivamente:
+   - Usa useEffect para crear un intervalo que disminuya el tiempo en el estado cada segundo, solo si el temporizador está activo y los segundos son mayores que cero.
+
+4. Agregar funciones para iniciar, pausar y reiniciar:
+   - Crea funciones que cambien el estado activo y que también gestionen el tiempo restante.
+
+5. Mostrar el tiempo restante:
+   - En el renderizado, muestra el tiempo en segundos.
+
+6. Agregar un campo de entrada:
+   - Permite al usuario ingresar el tiempo que desea contar, actualizando el estado correspondiente.
+
+7. Desactivar botones según la actividad del temporizador:
+   - Asegúrate de que los botones de iniciar y pausar se habiliten o deshabiliten adecuadamente según el estado activo.
